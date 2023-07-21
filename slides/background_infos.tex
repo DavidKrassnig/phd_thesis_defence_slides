@@ -1,0 +1,199 @@
+\section{Background Information}
+\begin{frame}<2->[t]
+\sectionpage\vskip 9pt
+
+\begin{itemize}
+    \item<1-> There are two competing approaches to model conditionals such as (1):
+\end{itemize}\visible<2->{
+\ex. $\color{seeblau100}\underbrace{\strut\strut\text{\phantom{tt}\color{black}If {\color{red}John went to the party\phantom{tt}}}\phantom\strut}_\text{\textbf{Antecedent}}\text{\color{black},}~\overbrace{\phantom{^t}\strut\text{\phantom{t}\color{OliveGreen}he would have fun\color{black}.\phantom{t}}\phantom{^t}}^\text{\textbf{Consequent}}$\label{ex:conditionals}
+
+}\vskip 9pt
+        \begin{itemize}
+            \item<3-> Strict Analyses \citep{Peirce1896,Lewis1912,Lewis1914,Lewis1918,Fintel2001,Gillies2007}\vskip 9pt
+                \begin{itemize}
+                    \item<4-> Quantify over a single unstructured domain of accessible possible worlds
+                \end{itemize}\vskip 18pt
+            \item<3-> Variably-Strict Analyses \citep{Stalnaker1968,Lewis1973}\vskip 9pt
+                \begin{itemize}
+                    \item<5-> Quantify over differing possible world domains as determined by the antecedent 
+                \end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[t]
+\sectionpage\vskip 9pt
+\begin{itemize}
+    \item<1-> What are (reverse) Sobel sequences?
+\end{itemize}
+\visible<2->{	\ex.	{\color{seeblau100}Sobel Sequence schematic}\\
+	If $\color{red}\phi$ then $\color{OliveGreen}\chi$, but if $({\color{red}\phi}\land{\color{Orange}\psi})$ then not $\color{OliveGreen}\chi$\label{def:ss}
+
+}	
+\begin{itemize}
+    \vskip 9pt
+    \item<3-> Example Sobel sequence:\vspace{-6pt}
+\end{itemize}
+\visible<4->{    \ex.\textit{It is unlikely, but undecided whether John and Mary go to a small party. John dislikes Mary. Each decision is independent from and unknown to the other.}\\
+    \textbf{$S_1$: }\phantom{\#}If {\color{red}John went to the party}, {\color{OliveGreen}he would have fun};\\\phantom{\textbf{$S_1$: }}\phantom{\#}but if {\color{red}John went to the party} and {\color{Orange}Mary went, too}, {\color{OliveGreen}he would} not {\color{OliveGreen}have fun}.
+
+}\vskip 9pt
+\begin{itemize}
+    \item<5-> Generally felicitous
+\end{itemize}
+\end{frame}
+
+\begin{frame}[t]
+\sectionpage\vskip 9pt
+\begin{itemize}
+    \item<1-> What are (reverse) Sobel sequences?
+\end{itemize}\vskip 9pt
+\input{text/ss-rss-reminder}
+\begin{itemize}
+    \vskip 9pt
+    \item<1-> Example reverse Sobel sequence:\vspace{-9.25pt}
+\end{itemize}
+\visible<2->{    \ex.\label{ex:badrss}\textit{It is unlikely, but undecided whether John and Mary go to a small party. John dislikes Mary. Each decision is independent from and unknown to the other.}\\
+    \textbf{$S_1$: }\phantom{\#}If {\color{red}John went to the party} and {\color{Orange}Mary went, too}, {\color{OliveGreen}he would} not {\color{OliveGreen}have fun};\\\phantom{\textbf{$S_1$: }}\#but if {\color{red}John went to the party}, {\color{OliveGreen}he would have fun}.
+    
+}\vskip 9pt
+\begin{itemize}
+    \item<3-> Generally infelicitous \citep{Heim1994-MIT}
+\end{itemize}
+\end{frame}
+
+
+
+\subsection{Variably-Strict Semantics}
+\begin{frame}[t]
+\subsectionpage\vskip 9pt
+\input{text/ss-rss-reminder}\vskip 18pt
+\begin{itemize}
+            \item<1-> Variably-Strict Analyses \citep{Stalnaker1968,Lewis1973}
+\end{itemize}\vskip 9pt
+\visible<2->{\begin{myframe}[top=5pt,bottom=5pt,left=5pt,right=5pt,arc=5pt,auto outer arc]
+{\begin{minipage}[h]{\textwidth}
+\ex.	For all contexts $c$, `If $\color{red}\phi$ then $\color{OliveGreen}\chi$' is true at $w$ in $c$ iff \textbf{all the closest $\color{red}\phi$-worlds to $w$} are\linebreak\phantom{For all contexts $c$,} $\color{OliveGreen}\chi$-worlds, where closeness is determined by similarity.\label{def:variablystrict}
+
+\end{minipage}}
+\end{myframe}}\vskip 18pt
+\begin{itemize}
+    \item<3-> Similarity to evaluation world $w_0$ is reduced by each deviation from $w_0$ \citep{Lewis1973}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[t]
+\subsectionpage\vskip 9pt
+\begin{itemize}
+    \item<1-> ${\color{red}\phi}\land{\color{Orange}\psi}$-worlds are one step ($\color{Orange}\psi$) in similarity further removed to $w_0$ than $\color{red}\phi$-worlds
+\end{itemize}\vskip 9pt
+\begin{figure}[ht!]
+\centering
+\input{tikz/vs_bidirectional}
+\end{figure}
+\begin{itemize}
+    \item<4-> Either sequence type should be felicitous
+\end{itemize}
+\end{frame}
+
+
+\subsection{(Semi)-Dynamic Strict Semantics}
+\begin{frame}[t]
+	\subsectionpage\vskip 9pt
+	\begin{itemize}
+		\item<1->	\citet{Fintel2001} \&~\citet{Gillies2007}
+				\begin{itemize}
+					\item<2->	Strict analysis 
+					\item<3->   Added (semi-)dynamic component: \visible<4->{the \textit{Modal Horizon}}
+					\end{itemize}
+	\end{itemize}\vskip 9pt
+\visible<5->{\begin{myframe}[top=5pt,bottom=5pt,left=5pt,right=5pt,arc=5pt,auto outer arc]{\begin{minipage}[h]{\textwidth}
+	\ex.	For all contexts $c$, `If $\color{red}\phi$, then $\color{OliveGreen}\chi$' is true at $w$ in $c$ iff \textbf{all $\color{red}\phi$-worlds in a domain D}\linebreak\phantom{For all contexts $c$, }are $\color{OliveGreen}\chi$-worlds, where D is the modal horizon, which grows to\linebreak\phantom{For all contexts $c$, }encompass all worlds equal/greater in similarity to closest\linebreak\phantom{For all contexts $c$, }antecedent worlds if there is no antecedent world in D.\label{def:fintel}
+
+\end{minipage}}\end{myframe}}\vskip 18pt
+    \begin{itemize}
+        \item<6-> Modal Horizon does not shrink easily~(requires effort)
+    \end{itemize}
+\end{frame}
+
+\begin{frame}[t]
+	\subsectionpage\vskip 9pt
+	\begin{itemize}
+        \item<1->	Conditional sequence affects modal horizon expansion
+	\end{itemize}\vskip 9pt
+	\begin{figure}[ht!]
+\centering
+\input{tikz/modalhorizon}
+\label{fig:fintel}
+\end{figure}
+	\begin{itemize}
+        \item<4->   Explains difference in felicity
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[t]
+\sectionpage\vskip 9pt\textbf{\huge Current (to be updated) state:}\vskip 18pt
+\begin{table}[]
+    \centering
+    \begin{tabular}{l||cc|ccc}
+    Phenomenon  &    \multicolumn{2}{|c|}{Strict Semantics}    &  \multicolumn{3}{|c}{Variably-Strict Semantics}\\\hline\hline
+                            &   \sout{Static}  & Dynamic    &   Basic    &     &    \\\hline
+    \color{Gray}NPI Licensing           &   \sout{\color{Gray}Yes}     &  \color{Gray}Yes      &   \color{Gray}Partial   &      &   \\
+    SS Felicity     &   \sout{No}      &  Yes      &   Yes     &        &   \\
+    rSS Infelicity    &   \sout{Yes}      &   Yes      &   {No}     &        & 
+    \end{tabular}
+\end{table}
+\end{frame}
+
+
+\subsection{Variably-Strict Semantics Strike Back}
+\begin{frame}[t]
+	\sectionpage\vskip 9pt
+	\input{text/ss-rss-reminder}\vskip 18pt
+	\begin{itemize}
+		\item   \citet{Moss2012} showed that some rSS are felicitous:
+	\end{itemize}\vskip 18pt
+	\visible<2->{\ex.	 \textit{(Holding up a dry match, with no water around)} If {\color{red}I had struck this match} and {\color{Orange}it had been soaked}, {\color{OliveGreen}it would} not {\color{OliveGreen}have lit}. But if {\color{red}I \MakeUppercase{had} struck this match}, {\color{OliveGreen}it would have lit}.\\%
+	\vspace{-5mm}\emptyfill(adapted from \citet[p. 106]{Stalnaker1968} by \citet[p. 487]{Lewis2017})\label{ex:match}%
+
+}
+\end{frame}
+
+\begin{frame}[t]
+\sectionpage\vskip 9pt\textbf{\huge Current State:}\vskip 18pt
+\begin{table}[]
+    \centering
+    \begin{tabular}{l||cc|ccc}
+    Phenomenon  &    \multicolumn{2}{|c|}{Strict Semantics}    &  \multicolumn{3}{|c}{Variably-Strict Semantics}\\\hline\hline
+                            &   \sout{Static}  & Dynamic    &   Basic    &     &    \\\hline
+    \color{Gray}NPI Licensing           &   \sout{\color{Gray}Yes}     &  \color{Gray}Yes      &   \color{Gray}Partial   &      &   \\
+    SS Felicity     &   \sout{No}      &  Yes      &   Yes     &        &   \\
+    rSS Infelicity    &   \sout{Yes}      &   Yes      &   {No}     &        & \\
+    \textbf{rSS Felicity}    &   \sout{\textbf{No}}  &   \textbf{No}  &   \textbf{Yes} & 
+    \end{tabular}
+\end{table}
+\end{frame}
+
+\begin{frame}[t]
+\subsectionpage\vskip 9pt
+\begin{itemize}
+	\item<1->	Dynamic strict analyses and variably-strict analyses on equal footing\vskip 18pt
+	\item<1->   Unable to account for felicity/infelicity of reverse Sobel sequences:\vskip 18pt
+\end{itemize}\visible<2->{
+\begin{minipage}[h]{0.25\linewidth}
+\begin{table}[h]
+    \begin{tabular}{l||c}
+                &   Felicity\\\hline\hline
+          SS    &   \checkmark\\
+          rSS   &   \checkmark,~\#
+    \end{tabular}
+\end{table}
+\begin{tikzpicture}[overlay]
+\visible<3->{\draw[red, line width=2pt] (3.5,0.75) ellipse (1cm and 0.4cm);}
+\visible<4->{\node (fig1) at (4.4,0.275) {\includegraphics[scale=0.33]{graphics/glass.png}};}
+\end{tikzpicture} 
+\end{minipage}}\hspace{1cm}\visible<4->{
+\begin{minipage}{0.6\linewidth}
+\textbf{What is the deciding factor?}
+
+\end{minipage}}
+\end{frame}

@@ -1,0 +1,47 @@
+\documentclass[rgb,usenames,dvipsnames]{beamer}
+\usepackage{linguex}
+\usepackage{amssymb}
+\usepackage{natbib}
+\usepackage{stmaryrd}
+\usepackage{cancel}
+\usepackage{fontawesome}
+\usepackage[most]{tcolorbox}
+\usepackage{appendixnumberbeamer}
+
+\expandafter\def\csname ver@etex.sty\endcsname{}
+\usetheme{Konstanz}
+
+\setcounter{secnumdepth}{3}
+\format{169}
+
+\usetikzlibrary{decorations.text,calc,arrows.meta}
+
+\newcommand{\xmark}{\ding{55}}
+\newcommand{\secref}[1]{{\S\ref{#1}}}
+\newcommand{\emptyfill}{\hbox{}\hfill}
+\input{config/cf_arrow}
+\input{config/semantics}
+\input{config/rounded_box}
+\input{config/possessive_citation}
+
+\title{The Semantics and Pragmatics of Counterfactual Sentences at the Discourse Level}
+\titleCorporateDesign{The Semantics and Pragmatics}{of Counterfactual Sentences at the}{Discourse Level: Sobel-Sequences and}{the Licensing of Negative Polarity Items}
+\author{David Krassnig}
+\date{22.05.2023}
+\institute{University of Konstanz}
+
+\begin{document}
+\setmainfont{Arial}
+\setsansfont{Arial}
+\usebeamerfont{normalfont}
+\input{slides/titlepage}
+\setcounter{section}{-1}\input{slides/dissertation_structure}
+\input{slides/table_of_contents}
+\input{slides/background_infos}
+\input{slides/empirical_observations}
+\input{slides/implementation}
+\input{slides/conclusion}
+\appendix
+\input{slides/references}
+\input{slides/appendix}
+\end{document}
